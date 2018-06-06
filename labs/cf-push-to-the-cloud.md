@@ -2,10 +2,9 @@ Estimated Time: 25 minutes
 
 # What you will learn
 
-* How to access Apps Manager
-* How to install the `cf` CLI
 * How to target a Pivotal Cloud Foundry instance with the `cf` CLI
 * How to `cf push` apps
+* How to access Apps Manager
 
 # Exercises
 
@@ -19,7 +18,7 @@ Estimated Time: 25 minutes
 $ cf login -a api.sys.apbg.apcf.io --skip-ssl-validation
 ```
 
-2) Your org will be automatically targeted for you. Target the `LPW-PCF-101` by either typing it or selecting it from the list (#5).
+2) Your org will be automatically targeted for you. Target the `LPW-PCF-101` space by either typing it in or selecting it from the list (#5).
 
 3) Review where you are targeted (what user you are logged in as, your org and space)
 ```
@@ -29,23 +28,28 @@ $ cf target
 
 ***What Just Happened?***
 
-You have logged into Pivotal Cloud Foundry from two different clients (Apps Manager and the `cf` CLI).  You have installed the `cf` CLI and targeted a Pivotal Cloud Foundry instance.  You are ready to `push` apps.
+You have logged into Pivotal Cloud Foundry from the `cf` CLI and targeted a Pivotal Cloud Foundry instance.  You are ready to `push` apps.
 
 ## Pushing apps
 
 Next we will push (deploy) several applications.
 
-1) Download the [demo applications](../resources/demo-apps.zip).  Copy the file to folder: `~/pivotal-cloud-foundry-developer-workshop` (`~` is shorthand for the home directory in Linux, Mac and Unix based operating systems).  You will need to create this directory in your <a href=https://en.wikipedia.org/wiki/Home_directory target="_blank">home</a> directory.
+1) Download the [demo applications](../resources/demo-apps.zip).  Create a directory in your home directory called '~/pcf-101'. (`~` is shorthand for the home directory in Linux, Mac and Unix based operating systems).
+```
+$ cd ~
+$ mkdir pcf-101
+```
+2) Copy the file to the new folder you created: `~/pcf-101`
 
-2) Extract the zip file to `~/pivotal-cloud-foundry-developer-workshop/demo-apps`.  
+2) Extract the zip file to `~/pcf-101/demo-apps`.  
 
 The zip file contains four directories; each directory contains an application developed in a different language.
 
-3) Open a terminal window and push the `node` application
+3) Open a terminal window and push the `node` application. **Note, you will need to append your name to the name of the application to make it unique to you.
 
 ```
-$ cd ~/pivotal-cloud-foundry-developer-workshop/demo-apps/node
-$ cf push node --random-route -m 128M
+$ cd ~/pcf-101/demo-apps/node
+$ cf push node-[your name] --random-route -m 128M
 ```
 
 4) View the `node` application in your browser or use `curl`.  The url can be obtained from the `cf push` output or by issuing the command `cf apps`.
@@ -72,12 +76,7 @@ You just deployed four applications each based on a different language and runti
 
 ## Explore Apps Manager
 
-
-1) Review the following views:
-
-* Org
-* Space
-* App
+1) Log in to Apps Manager. Visit `https://login.sys.apbg.apcf.io/login` and use your user credentials to log in. Find the `LPW-PCF-101` space and click into it and find the name of the apps you have pushed. Notice you can see things like app events, logs, services, etc.
 
 ***What Just Happened?***
 
@@ -93,7 +92,7 @@ This is very important for resource constrained environments.
 $ cf delete php
 ```
 
-Repeat for `python`, and `ruby` applications.  Leave `node` around for the next lab.
+Repeat for `python`, and `ruby`  and `node` applications.
 
 # Beyond the class
 
