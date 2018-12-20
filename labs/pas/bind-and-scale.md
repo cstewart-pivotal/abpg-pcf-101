@@ -83,7 +83,7 @@ If you visit the application in the browser, you will see Cloud Foundry round-ro
 ## Self Healing
 1) Kill App
 
-Click "Kill App" and watch the application crashing. Notice that the appliation is still up, because we have multiple instances running.
+In the app UI, click "Kill App" and watch the application crashing. Notice that the application is still up, because we have multiple instances running.
 
 2) View the logs from the terminal
 
