@@ -18,7 +18,7 @@ Estimated Time: 25 minutes
 $ cf login -a api.sys.apbg.apcf.io --skip-ssl-validation
 ```
 
-2) Your org will be automatically targeted for you. Target the `LPW-PCF-101` space by either typing it in or selecting it from the list (#5).
+2) Your org will be automatically targeted for you. Target the `New Joiner PCF Workshop` space by either typing it in or selecting it from the list (#5).
 
 3) Review where you are targeted (what user you are logged in as, your org and space)
 ```
