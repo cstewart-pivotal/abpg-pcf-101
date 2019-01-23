@@ -7,10 +7,10 @@ Estimated Time: 25 minutes
 * How to access Apps Manager
 
 # Exercises
-These exercises require a PCF Pivotal Application Service environment. You have a few options here:
-* The APBG PCF instance. Please fill out [this brief form](TO DO!!!!!) to gain access to that environment. 
+<!-- These exercises require a PCF Pivotal Application Service environment. You have a few options here:
+* The APBG PCF instance. Please fill out [this brief form](TO DO!!!!!) to gain access to that environment.
 * Pivotal Web Services (PWS): Hosted PCF instance. New accounts get the equivalent of 60 days free credit. Follow the instructions [here](https://run.pivotal.io/) to sign up for an account.
-* [PCF Dev](https://pivotal.io/pcf-dev): running PCF locally on your machine
+* [PCF Dev](https://pivotal.io/pcf-dev): running PCF locally on your machine -->
 ## Access the PCF sandbox
 
 ## Login to Pivotal Cloud Foundry with the `cf` CLI
