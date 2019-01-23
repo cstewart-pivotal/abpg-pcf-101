@@ -37,7 +37,7 @@ You have logged into Pivotal Cloud Foundry from the `cf` CLI and targeted a Pivo
 
 Next we will push (deploy) several applications.
 
-1) Download the [demo applications](../resources/demo-apps.zip).  Create a directory in your home directory called '~/pcf-101'. (`~` is shorthand for the home directory in Linux, Mac and Unix based operating systems).
+1) Download the [demo applications](../../resources/demo-apps.zip).  Create a directory in your home directory called '~/pcf-101'. (`~` is shorthand for the home directory in Linux, Mac and Unix based operating systems).
 ```
 $ cd ~
 $ mkdir pcf-101
